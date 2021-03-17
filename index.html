@@ -71,7 +71,7 @@
         Next we took the league variable and encoded the values into 0, 1, and 2 representing the American League (AL), National League (NL), and 2 for if a player was traded from AL to NL or vice-versa.
         Initially we chose to go with a linear regression model but we discovered during the training process that there were some colinearity issues with some of the variables that the model was unable to see as well as some variable that were unneccessary
     </p>
-        <img src="/img/charts/Linear regression p values.png" alt="OLS Results" class="charts">
+        <img src="https://ibb.co/p297q8T" alt="OLS Results" class="charts">
     <p>
         After running the model we found that league and team payroll have the highest p-values meaning they are the least statistically significant variables. Therefore we dropped those columns in the dataset.
         Reflecting on our dataset and wondering why the accuracy scores were so low we discovered that there some variables that were collinear even though the model was saying that there were no issues.
@@ -82,7 +82,7 @@
     <p>
         We then switched from OLS to trying out Ridge and Lasso techniques. These also resulted in a low accuracy score. 
     </p>
-    <img src="/img/charts/Ridge lasso.png" alt="OLS Results" class="charts">
+    <img src="https://ibb.co/fq49qnY" alt="OLS Results" class="charts">
     <p>
         Since our hypothesis was that a player's WAR wouldn't follow a linear pattern we had to try a different approach using the random RandomForestRegressor.
         Just by tweaking the type of model we were using we were able to achieve an accuracy of 98.3% with an R^2
@@ -115,7 +115,7 @@
       <p>
       Finding the important features also helped to verify that we chose the correct model, as none of the importance levels of our data columns were extremely low.
       </p>
-        <img src="img/Charts/FeatImpScores.png" alt="important scores" class="charts">
+        <img src="https://ibb.co/n69W2yd" alt="important scores" class="charts">
 
       <p>
       The accuracy score of our data means that it will predict the WAR score accurately for the X data set 95% of the time, the training set 99% of the time,
