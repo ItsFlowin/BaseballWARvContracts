@@ -57,15 +57,6 @@ a:visited{
     color: #ddd
 }
 
-ol{
-    display:inline-block;
-    text-align: left;
-}
-
-.charts{
-    max-width: 500px;
-    height: auto;
-}
 .ptext{
     position: absolute;
     width: 100%;
@@ -126,6 +117,16 @@ ol{
     color: white;
     margin-top: 10px;
     text-align: center;
+}
+
+ol{
+    display:inline-block;
+    text-align: left;
+}
+
+.charts{
+    max-width: 500px;
+    height: auto;
 }
 
 a[id="nav1"]:target ~ #section.section-dark {
